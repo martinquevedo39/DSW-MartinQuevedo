@@ -1,0 +1,79 @@
+header{
+background-color: chocolate;
+padding: 1px;
+text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav{
+    background-color: goldenrod;
+    
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: cadetblue;
+    text-align: justify;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+article{
+    background-color: cadetblue;
+    grid-column: 1/4;
+    padding: 2px;
+    text-align: center;
+}
+aside{
+    background-color: aliceblue;
+    grid-column: 4/5;
+    padding: 10px;
+}
+footer{
+    background-color: goldenrod;
+    padding: 5px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 50px;
+}
+.menu>li{
+    float: left;
+}
+.menu li a{
+    background-color: darkgoldenrod;
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    display: block;
+}
+.menu li a:hover{
+    background-color: chocolate;
+}
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 130px;
+}
+.menu li:hover > ul{
+    display: block;
+}
+.menu li ul li{
+    position: relative;
+}
+.menu li ul li ul{
+    right: 130px;
+}
+@media screen and (max-width:768px) {
+    header {flex-direction: column;
+
+    }
+}
